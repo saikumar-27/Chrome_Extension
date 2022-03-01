@@ -1,0 +1,27 @@
+{
+    "name": "API",
+    "version": "0.0.1",
+    "manifest_version": 2,
+    "browser_action":{
+        "default_popup": "index.html",
+        "default_icon": "logo.png"
+    },
+    
+    "icons":{
+        "128": "logo.png"   
+    },
+    "chrome_url_overrides": {
+        "newtab": "index.html"
+      },
+    
+    "permissions": [
+        "activeTab",
+        "clipboardRead",
+        "clipboardWrite",
+        "storage",
+        "contextMenus",
+        "webRequest",
+        "webRequestBlocking",
+        "https://api.com/"
+      ]
+}
